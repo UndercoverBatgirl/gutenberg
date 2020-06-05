@@ -12,7 +12,7 @@
 	height: $button-size;
 	align-items: center;
 	box-sizing: border-box;
-	padding: 6px 12px;
+	padding: 6px;
 	overflow: hidden;
 	border-radius: $radius-block-ui;
 	color: $dark-gray-primary;
@@ -99,6 +99,16 @@
 			/* stylelint-enable */
 			border-color: color($theme-color);
 		}
+	}
+
+	/**
+	 * Primary and secondary buttons.
+	 */
+	&.is-primary,
+	&.is-secondary {
+		// This reduces the horizontal padding so that these buttons, which have
+		// no background color, have optically balanced spacing.
+		padding: 6px 12px;
 	}
 
 	/**

@@ -63,10 +63,11 @@ body.toplevel_page_gutenberg-edit-site {
 	& .components-button {
 		font-family: $default-font;
 		font-size: $default-font-size;
-		padding: 6px 12px;
+		padding: 6px;
 
-		&.is-tertiary {
-			padding: 6px;
+		&.is-primary,
+		&.is-secondary {
+			padding: 6px 12px;
 		}
 	}
 }
